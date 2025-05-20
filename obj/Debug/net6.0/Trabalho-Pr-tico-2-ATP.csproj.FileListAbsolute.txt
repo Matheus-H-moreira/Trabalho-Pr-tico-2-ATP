@@ -1,0 +1,15 @@
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\bin\Debug\net6.0\Trabalho-Pr-tico-2-ATP.exe
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\bin\Debug\net6.0\Trabalho-Pr-tico-2-ATP.deps.json
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\bin\Debug\net6.0\Trabalho-Pr-tico-2-ATP.runtimeconfig.json
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\bin\Debug\net6.0\Trabalho-Pr-tico-2-ATP.dll
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\bin\Debug\net6.0\Trabalho-Pr-tico-2-ATP.pdb
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\Trabalho-Pr-tico-2-ATP.csproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\Trabalho-Pr-tico-2-ATP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\Trabalho-Pr-tico-2-ATP.AssemblyInfoInputs.cache
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\Trabalho-Pr-tico-2-ATP.AssemblyInfo.cs
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\Trabalho-Pr-tico-2-ATP.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\Trabalho-Pr-tico-2-ATP.dll
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\refint\Trabalho-Pr-tico-2-ATP.dll
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\Trabalho-Pr-tico-2-ATP.pdb
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\Trabalho-Pr-tico-2-ATP.genruntimeconfig.cache
+C:\Users\Usuario\OneDrive - sga.pucminas.br\Algoritmos e Técnicas de Programação\Trabalho Prático 2\Trabalho-Pr-tico-2-ATP\obj\Debug\net6.0\ref\Trabalho-Pr-tico-2-ATP.dll
