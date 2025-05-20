@@ -1,6 +1,6 @@
 ﻿class Program
 {
-    static int ingressoComumInicial = 30, ingressoComum = 30, ingressoPrioritarioInicial = 10, ingressoPrioritario = 10, ingressoVIPInicial = 10, ingressoVIP = 10, iComum = 0, iPrioritario = 0, iVIP = 0;
+    static int ingressoComumInicial = 30, ingressoComum = 30, ingressoPrioritarioInicial = 10, ingressoPrioritario = 10, ingressoVIPInicial = 10, ingressoVIP = 10, iComum = 0, iPrioritario = 0, iVIP = 0, espectadoresPresentes = 0;
     static string[] vetorNomesComum = new string[50];
     static int[] vetorIdadesComum = new int[50];
     static int[] vetorNumIngressosComum = new int[50];
@@ -112,6 +112,7 @@
             System.Console.WriteLine("1. Ingresso Comum");
             System.Console.WriteLine("2. Ingresso Prioritário: ");
             System.Console.WriteLine("3. Ingresso VIP");
+            System.Console.WriteLine("4. Sair");
             System.Console.WriteLine("----------------------------");
             int tipoIngresso = int.Parse(Console.ReadLine());
 
@@ -142,6 +143,7 @@
                     ingressoComum--;
                     verdadeiro = false;
                     iComum++;
+                    espectadoresPresentes++;
                     break;
 
                 case 2:
@@ -169,6 +171,7 @@
                     ingressoPrioritario--;
                     verdadeiro = false;
                     iPrioritario++;
+                    espectadoresPresentes++;
                     break;
 
                 case 3:
@@ -196,6 +199,17 @@
                     ingressoVIP--;
                     verdadeiro = false;
                     iVIP++;
+                    espectadoresPresentes++;
+                    break;
+
+                case 4:
+                    Console.Clear();
+                    System.Console.WriteLine("-------------------------------");
+                    System.Console.WriteLine("Voltando [Aperte enter]");
+                    System.Console.WriteLine("-------------------------------");
+                    Console.ReadLine();
+
+                    verdadeiro = false;
                     break;
 
                 default:
@@ -233,9 +247,9 @@
             System.Console.WriteLine("1. Ingresso Comum");
             System.Console.WriteLine("2. Ingresso Prioritário");
             System.Console.WriteLine("3. Ingresso VIP");
-            tipoIngresso = int.Parse(Console.ReadLine());
+            System.Console.WriteLine("4. Sair");
             System.Console.WriteLine("----------------------------");
-
+            tipoIngresso = int.Parse(Console.ReadLine());
             switch (tipoIngresso)
             {
                 case 1:
@@ -256,6 +270,8 @@
                             ingressoComum++;
 
                             achado = true;
+
+                            espectadoresPresentes++;
                         }
                     }
 
@@ -293,6 +309,8 @@
                             ingressoPrioritario++;
 
                             achado = true;
+
+                            espectadoresPresentes++;
                         }
                     }
 
@@ -330,6 +348,8 @@
                             ingressoVIP++;
 
                             achado = true;
+
+                            espectadoresPresentes++;
                         }
                     }
 
@@ -347,6 +367,16 @@
                         Console.Clear();
                         break;
                     }
+                    break;
+
+                case 4:
+                    Console.Clear();
+                    System.Console.WriteLine("-------------------------------");
+                    System.Console.WriteLine("Voltando [Aperte enter]");
+                    System.Console.WriteLine("-------------------------------");
+                    Console.ReadLine();
+
+                    verdadeiro = false;
                     break;
 
                 default:
@@ -417,7 +447,54 @@
     }
     static void exibirResumo()
     {
-        
+
+        double percentualComum, percentualPrioritario, percentualVIP;
+        bool verdadeiro = true;
+        percentualComum = ingressoComum / espectadoresPresentes;
+        percentualPrioritario = ingressoPrioritario / espectadoresPresentes;
+        percentualVIP = ingressoVIP / espectadoresPresentes;
+
+        while (verdadeiro == true)
+        {
+            Console.Clear();
+            System.Console.WriteLine("-----------------------------------------");
+            System.Console.WriteLine($"Número total de espectadores presentes: {espectadoresPresentes}");
+            System.Console.WriteLine("Tipo ingresso: ");
+            System.Console.WriteLine("1. Ingresso Comum");
+            System.Console.WriteLine("2. Ingresso Prioritário");
+            System.Console.WriteLine("3. Ingresso VIP");
+            System.Console.WriteLine("4. Sair");
+            System.Console.WriteLine("-----------------------------------------");
+            int opcao = int.Parse(Console.ReadLine());
+
+            switch (opcao)
+            {
+                case 1:
+                    Console.Clear();
+                    System.Console.WriteLine("-----------------------------------------");
+                    System.Console.WriteLine($"Quantidade de pessoas presentes nessa categoria: {ingressoComum}");
+                    System.Console.WriteLine($"Percentual de pessoas nessa categoria: {percentualComum}");
+                    System.Console.WriteLine("Voltar para menu [aperte enter]");
+                    System.Console.WriteLine("-----------------------------------------");
+                    Console.ReadLine();
+
+                    break;
+
+                case 2:
+                    Console.Clear();
+                    System.Console.WriteLine("-----------------------------------------");
+                    System.Console.WriteLine($"Quantidade de pessoas presentes nessa categoria: {ingressoPrioritario}");
+                    System.Console.WriteLine($"Percentual de pessoas nessa categoria: {percentualPrioritario}");
+                    System.Console.WriteLine("Voltar para menu [aperte enter]");
+                    System.Console.WriteLine("-----------------------------------------");
+                    Console.ReadLine();
+                    
+                    break;
+
+                case 3:
+                    break;
+            }
+        }
     }
     static void listarEspectador()
     {
