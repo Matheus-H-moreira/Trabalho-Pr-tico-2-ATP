@@ -262,16 +262,10 @@
                             posicaoVetor = i;
 
                             numIngresso = 0;
-                            vetorIdadesComum[posicaoVetor] = 0;
-                            vetorNomesComum[posicaoVetor] = "";
 
                             verdadeiro = false;
 
-                            ingressoComum++;
-
                             achado = true;
-
-                            espectadoresPresentes++;
                         }
                     }
 
@@ -280,6 +274,12 @@
                         System.Console.WriteLine("Espectador removido com sucesso");
                         System.Console.WriteLine("Voltando para o menu[Aperte enter]");
                         Console.ReadLine();
+                        vetorNumIngressosComum[posicaoVetor] = 0;
+                        vetorIdadesComum[posicaoVetor] = 0;
+                        vetorNomesComum[posicaoVetor] = "";
+
+                        ingressoComum++;
+                        espectadoresPresentes--;
                     }
                     else
                     {
@@ -301,16 +301,10 @@
                             posicaoVetor = i;
 
                             numIngresso = 0;
-                            vetorIdadesPrioritario[posicaoVetor] = 0;
-                            vetorNomesPrioritario[posicaoVetor] = "";
 
                             verdadeiro = false;
 
-                            ingressoPrioritario++;
-
                             achado = true;
-
-                            espectadoresPresentes++;
                         }
                     }
 
@@ -319,6 +313,12 @@
                         System.Console.WriteLine("Espectador removido com sucesso");
                         System.Console.WriteLine("Voltando para o menu[Aperte enter]");
                         Console.ReadLine();
+                        vetorNumIngressosPrioritario[posicaoVetor] = 0;
+                        vetorIdadesPrioritario[posicaoVetor] = 0;
+                        vetorNomesPrioritario[posicaoVetor] = "";
+
+                        ingressoPrioritario++;
+                        espectadoresPresentes--;
                     }
                     else
                     {
@@ -340,16 +340,10 @@
                             posicaoVetor = i;
 
                             numIngresso = 0;
-                            vetorIdadesVIP[posicaoVetor] = 0;
-                            vetorNomesVIP[posicaoVetor] = "";
 
                             verdadeiro = false;
 
-                            ingressoVIP++;
-
                             achado = true;
-
-                            espectadoresPresentes++;
                         }
                     }
 
@@ -358,6 +352,12 @@
                         System.Console.WriteLine("Espectador removido com sucesso");
                         System.Console.WriteLine("Voltando para o menu[Aperte enter]");
                         Console.ReadLine();
+                        vetorNumIngressosVIP[posicaoVetor] = 0;
+                        vetorIdadesVIP[posicaoVetor] = 0;
+                        vetorNomesVIP[posicaoVetor] = "";
+
+                        ingressoVIP++;
+                        espectadoresPresentes--;
                     }
                     else
                     {
@@ -409,7 +409,7 @@
                 case 1:
                     Console.Clear();
                     System.Console.WriteLine("-------------------------------");
-                    System.Console.WriteLine($"{ingressoComumInicial} | Ingressos disponíveis: {ingressoComum}");
+                    System.Console.WriteLine($"Ingressos totais: {ingressoComumInicial} | Ingressos disponíveis: {ingressoComum}");
                     System.Console.WriteLine("Voltar [Aperte enter]");
                     System.Console.WriteLine("-------------------------------");
                     Console.ReadLine();
@@ -418,7 +418,7 @@
                 case 2:
                     Console.Clear();
                     System.Console.WriteLine("-------------------------------");
-                    System.Console.WriteLine($"{ingressoPrioritarioInicial} | Ingressos disponíveis: {ingressoPrioritario}");
+                    System.Console.WriteLine($" Ingressos totais: {ingressoPrioritarioInicial} | Ingressos disponíveis: {ingressoPrioritario}");
                     System.Console.WriteLine("Voltar [Aperte enter]");
                     System.Console.WriteLine("-------------------------------");
                     Console.ReadLine();
@@ -427,7 +427,7 @@
                 case 3:
                     Console.Clear();
                     System.Console.WriteLine("-------------------------------");
-                    System.Console.WriteLine($"{ingressoVIPInicial} | Ingressos disponíveis: {ingressoVIP}");
+                    System.Console.WriteLine($"Ingressos totais: {ingressoVIPInicial} | Ingressos disponíveis: {ingressoVIP}");
                     System.Console.WriteLine("Voltar [Aperte enter]");
                     System.Console.WriteLine("-------------------------------");
                     Console.ReadLine();
@@ -488,10 +488,28 @@
                     System.Console.WriteLine("Voltar para menu [aperte enter]");
                     System.Console.WriteLine("-----------------------------------------");
                     Console.ReadLine();
-                    
+
                     break;
 
                 case 3:
+                    Console.Clear();
+                    System.Console.WriteLine("-----------------------------------------");
+                    System.Console.WriteLine($"Quantidade de pessoas presentes nessa categoria: {ingressoVIP}");
+                    System.Console.WriteLine($"Percentual de pessoas nessa categoria: {percentualVIP}");
+                    System.Console.WriteLine("Voltar para menu [aperte enter]");
+                    System.Console.WriteLine("-----------------------------------------");
+                    Console.ReadLine();
+
+                    break;
+
+                case 4:
+                    Console.Clear();
+                    System.Console.WriteLine("-------------------------------");
+                    System.Console.WriteLine("Voltando [Aperte enter]");
+                    System.Console.WriteLine("-------------------------------");
+                    Console.ReadLine();
+
+                    verdadeiro = false;
                     break;
             }
         }
