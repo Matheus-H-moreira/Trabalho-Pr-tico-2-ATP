@@ -59,7 +59,9 @@
     }
     static void escolha()
     {
-        while (true)
+        bool continuar = true;
+
+        while (continuar == true)
         {
             Console.Clear();
             System.Console.WriteLine("------------------------------------------");
@@ -92,7 +94,32 @@
                     listarEspectador();
                     break;
                 case 6:
-                    sair();
+                    while (true)
+                    {
+                        System.Console.WriteLine("Deseja sair [S/N]");
+                        char opcao = char.Parse(Console.ReadLine());
+
+                        if (opcao == 'S' || opcao == 's')
+                        {
+                            System.Console.WriteLine("Fechando programa");
+                            System.Console.WriteLine("Aperte enter");
+                            Console.ReadLine();
+                            continuar = false;
+                            return;
+                        }
+                        else if (opcao == 'N' || opcao == 'n')
+                        {
+                            Console.Clear();
+                            System.Console.WriteLine("Voltando para menu");
+                            System.Console.WriteLine("Aperte enter");
+                            Console.ReadLine();
+                            break;
+                        }
+                        else
+                        {
+                            System.Console.WriteLine("Opção não encontrada");
+                        }
+                    }
                     break;
             }
         }
@@ -386,7 +413,7 @@
                     System.Console.WriteLine("Voltando para o menu [Aperte enter]");
                     Console.ReadLine();
                     break;
-            }  
+            }
         }
     }
     static void consultarIngressos()
@@ -448,11 +475,15 @@
     static void exibirResumo()
     {
 
-        double percentualComum, percentualPrioritario, percentualVIP;
+        double percentualComum = 0, percentualPrioritario = 0, percentualVIP = 0;
         bool verdadeiro = true;
-        percentualComum = ingressoComum / espectadoresPresentes;
-        percentualPrioritario = ingressoPrioritario / espectadoresPresentes;
-        percentualVIP = ingressoVIP / espectadoresPresentes;
+
+        if (espectadoresPresentes > 0)
+        {
+            percentualComum = (iComum * 100) / espectadoresPresentes;
+            percentualPrioritario = (iPrioritario * 100) / espectadoresPresentes;
+            percentualVIP = (iVIP * 100) / espectadoresPresentes;
+        }
 
         while (verdadeiro == true)
         {
@@ -515,10 +546,6 @@
         }
     }
     static void listarEspectador()
-    {
-        
-    }
-    static void sair()
     {
 
     }
