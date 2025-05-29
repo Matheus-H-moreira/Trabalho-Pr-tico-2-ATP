@@ -102,7 +102,7 @@
                         if (opcao == 'S' || opcao == 's')
                         {
                             System.Console.WriteLine("Fechando programa");
-                            System.Console.WriteLine("Aperte enter");
+                            System.Console.WriteLine("[Aperte enter]");
                             Console.ReadLine();
                             continuar = false;
                             return;
@@ -111,7 +111,7 @@
                         {
                             Console.Clear();
                             System.Console.WriteLine("Voltando para menu");
-                            System.Console.WriteLine("Aperte enter");
+                            System.Console.WriteLine("[Aperte enter]");
                             Console.ReadLine();
                             break;
                         }
@@ -547,7 +547,65 @@
     }
     static void listarEspectador()
     {
+        while (true)
+        {
+            Console.Clear();
+            System.Console.WriteLine("------------------------------------------");
+            System.Console.WriteLine("Deseja listar o espectador de qual seção: ");
+            System.Console.WriteLine("1. Ingresso Comum");
+            System.Console.WriteLine("2. Ingresso Prioritário");
+            System.Console.WriteLine("3. Ingresso VIP");
+            System.Console.WriteLine("4. Sair");
+            System.Console.WriteLine("------------------------------------------");
+            int opcao = int.Parse(Console.ReadLine());
 
+            switch (opcao)
+            {
+                case 1:
+                    Console.Clear();
+                    for (int i = 0; i < vetorNomesComum.Length; i++)
+                    {
+                        if (vetorIdadesComum[i] != 0)
+                        {
+                            System.Console.Write($"{i + 1}º espectador: \n Nome: {vetorNomesComum[i]}, Idade: {vetorIdadesComum[i]}, Número do ingresso: {vetorNumIngressosComum[i]} \n");
+                        }
+                    }
+                    System.Console.WriteLine("[Aperte enter]");
+                    Console.ReadLine();
+                    break;
+
+                case 2:
+                    Console.Clear();
+                    for (int i = 0; i < vetorNomesPrioritario.Length; i++)
+                    {
+                        if (vetorIdadesPrioritario[i] != 0)
+                        {
+                            System.Console.Write($"{i + 1}º espectador: \n Nome: {vetorNomesPrioritario[i]}, Idade: {vetorIdadesPrioritario[i]}, Número do ingresso: {vetorNumIngressosPrioritario[i]} \n");
+                        }
+                    }
+                    System.Console.WriteLine("[Aperte enter]");
+                    Console.ReadLine();
+                    break;
+
+                case 3:
+                    Console.Clear();
+                    for (int i = 0; i < vetorNomesVIP.Length; i++)
+                    {
+                        if (vetorIdadesVIP[i] != 0)
+                        {
+                            System.Console.Write($"{i + 1}º espectador: \n Nome: {vetorNomesVIP[i]}, Idade: {vetorIdadesVIP[i]}, Número do ingresso: {vetorNumIngressosVIP[i]} \n");
+                        }
+                    }
+                    System.Console.WriteLine("[Aperte enter]");
+                    Console.ReadLine();
+                    break;
+
+                case 4:
+                    Console.Clear();
+                    System.Console.WriteLine("Voltando [Aperte enter]");
+                    return;
+            }
+        }
     }
     static void Main()
     {
