@@ -146,6 +146,13 @@
             switch (tipoIngresso)
             {
                 case 1:
+                    if (ingressoComum <= 0)
+                    {
+                        Console.WriteLine("Não há ingressos disponíveis para essa categoria.");
+                        Console.ReadLine();
+                        break;
+                    }
+
                     Console.Clear();
                     System.Console.WriteLine("----------------------------");
                     System.Console.Write("Nome: ");
@@ -174,6 +181,13 @@
                     break;
 
                 case 2:
+                    if (ingressoPrioritario <= 0)
+                    {
+                        Console.WriteLine("Não há ingressos disponíveis para essa categoria.");
+                        Console.ReadLine();
+                        break;
+                    }
+
                     Console.Clear();
                     System.Console.WriteLine("----------------------------");
                     System.Console.Write("Nome: ");
@@ -202,6 +216,13 @@
                     break;
 
                 case 3:
+                    if (ingressoVIP <= 0)
+                    {
+                        Console.WriteLine("Não há ingressos disponíveis para essa categoria.");
+                        Console.ReadLine();
+                        break;
+                    }
+
                     Console.Clear();
                     System.Console.WriteLine("----------------------------");
                     System.Console.Write("Nome: ");
