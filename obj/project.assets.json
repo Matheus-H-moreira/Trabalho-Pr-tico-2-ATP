@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive - sga.pucminas.br\\Algoritmos e Técnicas de Programação\\Trabalho Prático 2\\Trabalho-Pr-tico-2-ATP\\Trabalho-Pr-tico-2-ATP.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\OneDrive - sga.pucminas.br\\Algoritmos e Técnicas de Programação\\Trabalho Prático 2\\Trabalho-Pr-tico-2-ATP-1\\Trabalho-Pr-tico-2-ATP.csproj",
       "projectName": "Trabalho-Pr-tico-2-ATP",
-      "projectPath": "C:\\Users\\Usuario\\OneDrive - sga.pucminas.br\\Algoritmos e Técnicas de Programação\\Trabalho Prático 2\\Trabalho-Pr-tico-2-ATP\\Trabalho-Pr-tico-2-ATP.csproj",
+      "projectPath": "C:\\Users\\Usuario\\OneDrive - sga.pucminas.br\\Algoritmos e Técnicas de Programação\\Trabalho Prático 2\\Trabalho-Pr-tico-2-ATP-1\\Trabalho-Pr-tico-2-ATP.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\OneDrive - sga.pucminas.br\\Algoritmos e Técnicas de Programação\\Trabalho Prático 2\\Trabalho-Pr-tico-2-ATP\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\OneDrive - sga.pucminas.br\\Algoritmos e Técnicas de Programação\\Trabalho Prático 2\\Trabalho-Pr-tico-2-ATP-1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
